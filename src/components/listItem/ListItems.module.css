@@ -1,0 +1,39 @@
+.grocery-item {
+  margin-bottom: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s linear;
+  padding: 0.25rem 1rem;
+  text-transform: capitalize;
+  border-bottom: 2px solid rgb(219, 219, 5);
+}
+
+.title {
+  margin-bottom: 0;
+  color: rgb(44, 43, 43);
+  letter-spacing: 2px;
+  transition: all 0.3s linear;
+}
+.actions {
+  padding: 0.2rem 0.1rem;
+}
+.edit-btn,
+.delete-btn {
+  padding: 0.5rem;
+  margin: 0 0.15rem;
+  color: #444;
+  font-size: 1rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  box-shadow: 0px 4px 4px rgb(230, 228, 228);
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  color: #222;
+  box-shadow: 0px 4px 4px rgb(192, 190, 190);
+}

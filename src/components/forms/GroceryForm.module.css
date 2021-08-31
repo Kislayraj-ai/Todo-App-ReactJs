@@ -1,0 +1,83 @@
+.section-center {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  padding: 2rem;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 8rem;
+}
+.section-center:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.grocery-form h3 {
+  font-size: 1.5rem;
+  color: rgb(4, 27, 78);
+  margin-bottom: 1.7rem;
+  text-align: center;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control input {
+  padding: 0.25rem;
+  padding-left: 1rem;
+  background: rgb(235, 249, 255);
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-color: transparent;
+  font-size: 1rem;
+  flex: 1 0 auto;
+  color: rgb(32, 32, 32);
+  outline: none;
+}
+
+.add-btn {
+  background: rgb(230, 255, 86);
+  border-color: transparent;
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.85rem;
+}
+.add-btn:hover {
+  background: rgb(215, 240, 72);
+}
+
+.clear-btn {
+  margin-top: 1.4rem;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  padding: 0.3rem 0.8rem;
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid rgb(224, 4, 4);
+  background: transparent;
+  color: rgb(44, 43, 43);
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.clear-btn:hover {
+  color: rgb(114, 8, 8);
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
