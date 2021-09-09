@@ -1,3 +1,4 @@
-
+public/_redirects
 node_modules/
-
+build/
+.netlify/
