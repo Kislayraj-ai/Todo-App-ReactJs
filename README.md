@@ -46,6 +46,10 @@ Your users should be able to:
 
 ![back](https://user-images.githubusercontent.com/68383933/138563159-5b07478c-0ad9-4d46-8411-83383b5d4c94.jpg)
 
+### drag and drop
+
+![chrome-capture](https://user-images.githubusercontent.com/68383933/138583604-c908e80d-fe3a-4e41-9bac-4d5076ae6c9e.gif)
+
 ### Authors
 
 - [@kislayraj-ai](https://www.github.com/kislayraj-ai)

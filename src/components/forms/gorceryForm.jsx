@@ -159,7 +159,7 @@ const GroceryForm = () => {
         </DragDropContext>
       </div>
 
-      <h4 className={classes.dragDrop}>Drag and Drop</h4>
+      <h4>Drag and Drop</h4>
     </section>
   );
 };

@@ -11,7 +11,7 @@
 }
 .check {
   display: flex;
-  width: 40%;
+  width: 70%;
 }
 
 .checkbox {
@@ -88,10 +88,4 @@
   .completed::before {
     top: 35%;
   }
-}
-
-/*       class to be added with js           */
-
-.over {
-  background: #dbdbdb;
 }
