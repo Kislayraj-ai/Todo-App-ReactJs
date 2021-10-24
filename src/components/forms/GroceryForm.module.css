@@ -1,83 +1,128 @@
 .section-center {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s linear;
-  padding: 2rem;
-  width: 90vw;
   margin: 0 auto;
-  max-width: 35rem;
-  margin-top: 8rem;
+  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-.section-center:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+.container {
+  margin: 0 auto;
+  width: 45%;
+  margin-top: 5rem;
+  background: transparent;
+}
+.header {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 300px;
+  background: url(../../images/bg-desktop-dark.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.headerLight {
+  background: url(../../images/bg-desktop-light.jpg);
 }
 
 .grocery-form h3 {
-  font-size: 1.5rem;
-  color: rgb(4, 27, 78);
+  font-size: 2.2rem;
+  color: #fff;
   margin-bottom: 1.7rem;
-  text-align: center;
+  letter-spacing: 9px;
+}
+.grocery-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.themeButton {
+  width: 20px;
+  height: 20px;
+  background: url(../../images/icon-sun.svg) center/cover no-repeat;
+  cursor: pointer;
+}
+.theme {
+  background: url(../../images/icon-moon.svg) center/cover no-repeat;
+}
+.theme .grocery-item {
+  background: #fff;
 }
 .form-control {
   display: flex;
   justify-content: center;
 }
 
-.form-control input {
-  padding: 0.25rem;
-  padding-left: 1rem;
-  background: rgb(235, 249, 255);
+.grocery-input {
+  padding: 0.7rem;
+  color: #fff;
+  background: hsl(235, 24%, 19%);
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   border-color: transparent;
   font-size: 1rem;
   flex: 1 0 auto;
-  color: rgb(32, 32, 32);
+  border-radius: 5px;
   outline: none;
-}
-
-.add-btn {
-  background: rgb(230, 255, 86);
-  border-color: transparent;
-  flex: 0 0 5rem;
-  display: grid;
-  align-items: center;
-  padding: 0.25rem;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
-  cursor: pointer;
-  transition: all 0.2s;
-  font-size: 0.85rem;
-}
-.add-btn:hover {
-  background: rgb(215, 240, 72);
-}
-
-.clear-btn {
-  margin-top: 1.4rem;
-  font-size: 0.85rem;
-  text-transform: capitalize;
-  padding: 0.3rem 0.8rem;
-  display: grid;
-  align-items: center;
-  margin: 0 auto;
-  border-radius: 10px;
-  border: 1px solid rgb(224, 4, 4);
-  background: transparent;
-  color: rgb(44, 43, 43);
-  letter-spacing: 0.2rem;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.clear-btn:hover {
-  color: rgb(114, 8, 8);
+  border: none;
 }
 
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
+  }
+}
+
+/* light theme */
+
+.light {
+  background: #fff;
+  color: #333;
+  box-shadow: 0px 4px 15px rgba(92, 90, 90, 0.808);
+}
+
+.dragDrop {
+  text-align: center;
+  margin-top: 2.6rem;
+  color: hsl(236, 9%, 61%);
+  font-weight: lighter;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 2rem;
+    background: transparent;
+  }
+  .header {
+    height: 180px;
+    background: url(../../images/bg-mobile-dark.jpg) center/cover no-repeat;
+  }
+  .headerLight {
+    background: url(../../images/bg-mobile-light.jpg) center/cover no-repeat;
+  }
+  .grocery-form h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 7px;
+  }
+  .themeButton {
+    width: 16px;
+    height: 16px;
+  }
+
+  .grocery-input {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .dragDrop {
+    font-size: 0.8rem;
   }
 }

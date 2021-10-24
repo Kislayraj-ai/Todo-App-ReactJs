@@ -1,8 +1,12 @@
 import React from 'react';
 import GroceryForm from './components/forms/gorceryForm';
 
-const App = () => {
-  return <GroceryForm />;
-};
+function App() {
+  return (
+    <div className="app">
+      <GroceryForm />
+    </div>
+  );
+}
 
 export default App;

@@ -1,4 +1,56 @@
 .grocery-list {
-  margin-top: 1rem;
+  margin-top: 2rem;
   list-style: none;
+  background: hsl(235, 24%, 19%);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.container-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0.6rem 0.5rem;
+}
+
+.container-actions p,
+.container-actions button {
+  color: hsl(236, 9%, 61%);
+  font-size: 0.8rem;
+}
+.container-actions span {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.container-actions button {
+  text-transform: capitalize;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.container-actions button:hover {
+  color: hsl(216, 100%, 54%);
+}
+
+@media (max-width: 500px) {
+  .grocery-list {
+    margin-top: 1rem;
+  }
+  .container-actions {
+    padding: 0.4rem;
+  }
+  .container-actions p {
+    font-size: 0.6rem;
+  }
+  .container-actions button {
+    font-size: 0.8rem;
+  }
+  .container-actions span {
+    width: 50%;
+  }
 }

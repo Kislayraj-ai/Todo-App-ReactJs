@@ -6,34 +6,92 @@
   transition: all 0.3s linear;
   padding: 0.25rem 1rem;
   text-transform: capitalize;
-  border-bottom: 2px solid rgb(219, 219, 5);
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+}
+.check {
+  display: flex;
+  width: 40%;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  border: 1px solid hsl(236, 9%, 61%);
+  border-radius: 50%;
+}
+.checked {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    292deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(3, 1, 48, 1) 0%,
+    rgba(179, 69, 251, 1) 0%,
+    rgba(93, 138, 253, 1) 48%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  pointer-events: none;
+}
+.checked:d .checkbox img {
+  margin: 0 auto;
+  margin-left: 3px;
+  width: 60%;
+  height: 60%;
 }
 
 .title {
   margin-bottom: 0;
-  color: rgb(44, 43, 43);
   letter-spacing: 2px;
   transition: all 0.3s linear;
-}
-.actions {
-  padding: 0.2rem 0.1rem;
-}
-.edit-btn,
-.delete-btn {
-  padding: 0.5rem;
-  margin: 0 0.15rem;
-  color: #444;
-  font-size: 1rem;
-  background: transparent;
-  border-color: transparent;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s linear;
-  box-shadow: 0px 4px 4px rgb(230, 228, 228);
+  margin-left: 20px;
+  position: relative;
 }
 
-.edit-btn:hover,
-.delete-btn:hover {
-  color: #222;
-  box-shadow: 0px 4px 4px rgb(192, 190, 190);
+.completed::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0%;
+  width: 120%;
+  height: 1px;
+  background-color: hsl(236, 9%, 61%);
+}
+.completed {
+  color: hsl(236, 9%, 61%);
+}
+
+.actions {
+  padding: 0.2rem 0.1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.actions button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0 0.15rem;
+}
+
+.grocery-item:hover .actions {
+  visibility: visible;
+  opacity: 2;
+}
+
+@media (max-width: 500px) {
+  .grocery-item {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  .completed::before {
+    top: 35%;
+  }
+}
+
+/*       class to be added with js           */
+
+.over {
+  background: #dbdbdb;
 }

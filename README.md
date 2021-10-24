@@ -1,8 +1,9 @@
 # TodoList-ReactJs
 
-Its an todo list reactjs app where you can add ,edit and remove items .
+Its an todo app build with reactjs in which you can add ,remove , mark on
+completion and drag & drop the list to reorder.
 
-## Vsit Site
+### Vsit Site
 
 [Todo-List](https://kislayraj-todolist.netlify.app/)
 
@@ -17,15 +18,34 @@ start the server with
 npm install && npm start
 ```
 
-then perform the add ,edit , delete ,clear all(if any items in list is present)
-operations according to your wish. All the list items will be stored in the
-localStorage and the data in localstorage will change whenever any action is
-performed as it is handled by useEffect Hook.
+### description
 
-### Project Screenshot
+Your users should be able to:
 
-![todo](https://user-images.githubusercontent.com/68383933/132647554-2cfc4f6a-5076-4d10-b269-53fc3c30a836.png)
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Add new todos to the list
+- Mark todos as complete
+- Delete todos list from the list
+- Filter by all/active/complete todos
+- Clear all todos
+- Toggle light and dark mode
+- Drag and drop to reorder items on the list
 
-### Author
+### Screenshots
+
+#### Desktop view
+
+![dark](https://user-images.githubusercontent.com/68383933/138563029-7296d0e9-49b3-4dd7-87fd-b0f378d1070b.png)
+
+#### light mode
+
+![light](https://user-images.githubusercontent.com/68383933/138563032-0578e2e8-0b9b-472b-84ae-dc0e070eafdd.png)
+
+#### Mobile View
+
+![back](https://user-images.githubusercontent.com/68383933/138563159-5b07478c-0ad9-4d46-8411-83383b5d4c94.jpg)
+
+### Authors
 
 - [@kislayraj-ai](https://www.github.com/kislayraj-ai)

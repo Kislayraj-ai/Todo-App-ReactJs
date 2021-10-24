@@ -2,3 +2,5 @@ public/_redirects
 node_modules/
 build/
 .netlify/
+src/images/
+src/design/
